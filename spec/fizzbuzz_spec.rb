@@ -13,4 +13,13 @@ describe "fizzbuzz" do
   it "returns  1 when passed 1" do
     expect(fizzbuzz(1)).to eq 1
   end
+  it "returns 'fizz' when divisible by 3" do
+    expect(fizzbuzz(6)).to eq "fizz"
+  end
+  it "returns 'buzz' when divisible by 5" do
+    expect(fizzbuzz(10)).to eq "buzz"
+  end
+  it "returns 'fizzbuzz' when divisible by 3 and 5" do
+    expect(fizzbuzz(45)).to eq "fizzbuzz"
+  end
 end
