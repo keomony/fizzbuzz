@@ -22,4 +22,7 @@ describe "fizzbuzz" do
   it "returns 'fizzbuzz' when divisible by 3 and 5" do
     expect(fizzbuzz(45)).to eq "fizzbuzz"
   end
+  it "returns 0 when passed 0" do
+    expect(fizzbuzz(0)).to eq 0
+  end
 end
